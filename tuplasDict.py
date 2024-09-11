@@ -33,5 +33,17 @@ def exdict1():
     ra["Hugo"] = 215799
     ra["Diego"] = 959532
     print(ra)
-
+    
+    for x in ra:
+        print(x)
+        
+    print(ra.items())
+    print(ra.keys())
+    print(ra.values())
+    
+    print(ra.get("Hugo"))
+    
+    for nome,numero in ra.items():
+        print(nome, numero)
+    
 exdict1()
