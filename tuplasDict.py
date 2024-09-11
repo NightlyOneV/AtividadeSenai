@@ -21,6 +21,17 @@ def extupla4():
     print(y)
     print(x + y)
 
+def exdict1():
+    ra = {"Liz": 229874,
+          "Hugo": 215794,
+          "Sofia": 199745
+          }
+    print(type(ra))
+    print(ra["Liz"])
+    print(ra)
+    
+    ra["Hugo"] = 215799
+    ra["Diego"] = 959532
+    print(ra)
 
-
-extupla4()
+exdict1()
