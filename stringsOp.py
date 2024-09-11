@@ -89,21 +89,33 @@ def exstring7():
     print(",".join(l))
 
 def exstring8():
-    str = "Atividade"
-    print(str.lower())
-    print(str.upper())
+    stri = "Atividade"
+    print(stri.lower())
+    print(stri.upper())
     
 def exerciciostring():
     # Faça um programa que conta o número de palavras de um texto
-    str = input("Digite uma frase: ")
+    stri = input("Digite uma frase: ")
     pontuacao = [".", ",",":",";","!","?"]
     
     nstr = None
     
     for p in pontuacao:
-        nstr = str.replace(p, "")
+        nstr = stri.replace(p, "")
     
     palavras = nstr.split()
-    print(f"A Frase '{str}' contém {len(palavras)} palavras")
+    print(f"A Frase '{stri}' contém {len(palavras)} palavras")
 
-exerciciostring()
+def exerciciostring2():
+    # Verificação de palíndromos
+    
+    stri = input("Digite uma palavra/frase: ")
+    stri = stri.lower()
+    inversa = stri[::-1]
+    
+    if stri == inversa:
+        print(f"{stri} é um palíndromo!")
+    else:
+        print(f"{stri} não é um palíndromo!")
+
+exerciciostring2()
