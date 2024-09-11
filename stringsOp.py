@@ -96,7 +96,14 @@ def exstring8():
 def exerciciostring():
     # Faça um programa que conta o número de palavras de um texto
     str = input("Digite uma frase: ")
-    palavras = str.split()
+    pontuacao = [".", ",",":",";","!","?"]
+    
+    nstr = None
+    
+    for p in pontuacao:
+        nstr = str.replace(p, "")
+    
+    palavras = nstr.split()
     print(f"A Frase '{str}' contém {len(palavras)} palavras")
 
 exerciciostring()
