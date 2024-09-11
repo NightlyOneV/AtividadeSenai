@@ -92,5 +92,11 @@ def exstring8():
     str = "Atividade"
     print(str.lower())
     print(str.upper())
+    
+def exerciciostring():
+    # Faça um programa que conta o número de palavras de um texto
+    str = input("Digite uma frase: ")
+    palavras = str.split()
+    print(f"A Frase '{str}' contém {len(palavras)} palavras")
 
-exstring8()
+exerciciostring()
