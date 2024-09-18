@@ -45,5 +45,22 @@ def exdict1():
     
     for nome,numero in ra.items():
         print(nome, numero)
+        
+def exlist1():
+    notas = [8.0,5.5,9.3,0.5,3.1]
     
-exdict1()
+    for i in range(5):
+        print(notas[i])
+    
+def exlist2():
+    lista = [0,0,0,0,0,0,0,0,0,0]
+    
+    for i in range(10):
+        lista[i] = 5 * i
+
+    for i in range(len(lista)):
+        print(lista[i])
+
+    print(lista)
+    
+exlist2()
