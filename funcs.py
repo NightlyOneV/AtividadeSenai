@@ -9,7 +9,7 @@ def main():
 
 def leNumeroInt():
     numero = input("digite um numero inteiro: ")
-
+    
     return int(numero)
 
 def soma (numero1 ,numero2):
